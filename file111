@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                sh 'midir girish-1' 
+                sh 'mkdir girish-1' 
             }
         }
     }
