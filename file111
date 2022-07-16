@@ -1,0 +1,20 @@
+pipeline {
+    agent any 
+    stages {
+        stage('git pull') { 
+            steps {
+                git 'https://github.com/paras-7264/sk.git' 
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'we have successfully done testing' 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                sh 'midir girish-1' 
+            }
+        }
+    }
+}
